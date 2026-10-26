@@ -1,0 +1,57 @@
+body {
+  background-color: #0b0f17;
+  color: #ffffff;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo de la barra inferior fija */
+.mobile-bottom-bar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #121824;
+  border-top: 1px solid #222b3c;
+  z-index: 1000;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.nav-item {
+  background: none;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  color: #8b9bb4;
+  font-size: 10px;
+  cursor: pointer;
+  padding: 4px 0;
+  transition: color 0.2s ease;
+}
+
+.nav-icon {
+  font-size: 20px;
+  margin-bottom: 2px;
+}
+
+.nav-item.active {
+  color: #ffc107;
+}
+
+.tab-content {
+  display: none;
+  padding: 20px;
+  padding-bottom: 80px; /* Espacio para que la barra no tape el contenido */
+}
+
+.tab-content.active-tab {
+  display: block;
+}

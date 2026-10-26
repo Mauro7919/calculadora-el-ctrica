@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dimensionamiento Eléctrico Residencial</title>
+  <!-- Enlace a los estilos -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Contenido de tus pestañas (aquí irá tu calculador) -->
+  <div id="ambientes" class="tab-content active-tab">
+    <h2>Gestión de Ambientes y Cargas</h2>
+    <!-- Aquí puedes poner tus formularios o tablas actuales -->
+  </div>
+
+  <div id="tableros" class="tab-content">
+    <h2>Tableros Seccionales y Principales</h2>
+  </div>
+
+  <div id="resumen" class="tab-content">
+    <h2>Resumen de Consumo Total</h2>
+  </div>
+
+  <div id="esquemas" class="tab-content">
+    <h2>Esquemas Técnicos AEA 771</h2>
+  </div>
+
+  <div id="ajustes" class="tab-content">
+    <h2>Ajustes y Tensión</h2>
+  </div>
+
+  <!-- Barra de Navegación Inferior para Móviles -->
+  <nav class="mobile-bottom-bar">
+    <button class="nav-item active" onclick="switchTab('ambientes')">
+      <span class="nav-icon">🏠</span>
+      <span class="nav-label">Ambientes</span>
+    </button>
+    <button class="nav-item" onclick="switchTab('tableros')">
+      <span class="nav-icon">⚡</span>
+      <span class="nav-label">Tableros</span>
+    </button>
+    <button class="nav-item" onclick="switchTab('resumen')">
+      <span class="nav-icon">📊</span>
+      <span class="nav-label">Resumen</span>
+    </button>
+    <button class="nav-item" onclick="switchTab('esquemas')">
+      <span class="nav-icon">📐</span>
+      <span class="nav-label">Esquemas</span>
+    </button>
+    <button class="nav-item" onclick="switchTab('ajustes')">
+      <span class="nav-icon">⚙️</span>
+      <span class="nav-label">Ajustes</span>
+    </button>
+  </nav>
+
+  <!-- Enlace a la lógica de JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
